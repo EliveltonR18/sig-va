@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="415787fc-470c-4714-919a-b52bf7eb3c9a" name="Default" comment="" />
+    <list default="true" id="415787fc-470c-4714-919a-b52bf7eb3c9a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Diagrama de classes.vpp" beforeDir="false" afterPath="$PROJECT_DIR$/Diagrama de classes.vpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Tarefa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Tarefa.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,14 +31,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Disciplina.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Disciplina.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Disciplina.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="132" column="40" selection-start-line="132" selection-start-column="40" selection-end-line="132" selection-end-column="40" />
+            <state relative-caret-position="230">
+              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Disciplina#0;class#Disciplina#0" />
+                <element signature="method#Disciplina#1;class#Disciplina#0" />
                 <element signature="method#adicionarAluno#0;class#Disciplina#0" />
                 <element signature="method#adicionarProfessor#0;class#Disciplina#0" />
                 <element signature="method#adicionarTarefa#0;class#Disciplina#0" />
@@ -48,14 +52,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tarefa.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Tarefa.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Tarefa.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="439">
+              <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
               <folding>
                 <element signature="method#Tarefa#0;class#Tarefa#0" />
                 <element signature="method#Tarefa#1;class#Tarefa#0" />
+                <element signature="method#getDuracao#0;class#Tarefa#0" />
+                <element signature="method#toString#0;class#Tarefa#0" />
+                <element signature="method#equals#0;class#Tarefa#0" />
               </folding>
             </state>
           </provider>
@@ -77,8 +84,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Pessoa.java" />
-        <option value="$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Tarefa.java" />
         <option value="$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Disciplina.java" />
+        <option value="$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Tarefa.java" />
       </list>
     </option>
   </component>
@@ -205,12 +212,12 @@
       <workItem from="1527040031841" duration="673000" />
       <workItem from="1527041651783" duration="29000" />
       <workItem from="1527042297122" duration="1591000" />
-      <workItem from="1527044161186" duration="2822000" />
+      <workItem from="1527044161186" duration="4098000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6970000" />
+    <option name="totallyTimeSpent" value="8246000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1368" height="780" extended-state="6" />
@@ -278,6 +285,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Disciplina#0;class#Disciplina#0" />
+            <element signature="method#Disciplina#1;class#Disciplina#0" />
             <element signature="method#adicionarAluno#0;class#Disciplina#0" />
             <element signature="method#adicionarProfessor#0;class#Disciplina#0" />
             <element signature="method#adicionarTarefa#0;class#Disciplina#0" />
@@ -296,6 +304,9 @@
           <folding>
             <element signature="method#Tarefa#0;class#Tarefa#0" />
             <element signature="method#Tarefa#1;class#Tarefa#0" />
+            <element signature="method#getDuracao#0;class#Tarefa#0" />
+            <element signature="method#toString#0;class#Tarefa#0" />
+            <element signature="method#equals#0;class#Tarefa#0" />
           </folding>
         </state>
       </provider>
@@ -356,24 +367,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Tarefa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="method#Tarefa#0;class#Tarefa#0" />
-            <element signature="method#Tarefa#1;class#Tarefa#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Disciplina.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="132" column="40" selection-start-line="132" selection-start-column="40" selection-end-line="132" selection-end-column="40" />
+        <state relative-caret-position="230">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Disciplina#0;class#Disciplina#0" />
+            <element signature="method#Disciplina#1;class#Disciplina#0" />
             <element signature="method#adicionarAluno#0;class#Disciplina#0" />
             <element signature="method#adicionarProfessor#0;class#Disciplina#0" />
             <element signature="method#adicionarTarefa#0;class#Disciplina#0" />
@@ -381,6 +382,20 @@
             <element signature="method#getCargaHorariaRestante#0;class#Disciplina#0" />
             <element signature="method#toString#0;class#Disciplina#0" />
             <element signature="method#equals#0;class#Disciplina#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Tarefa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+          <folding>
+            <element signature="method#Tarefa#0;class#Tarefa#0" />
+            <element signature="method#Tarefa#1;class#Tarefa#0" />
+            <element signature="method#getDuracao#0;class#Tarefa#0" />
+            <element signature="method#toString#0;class#Tarefa#0" />
+            <element signature="method#equals#0;class#Tarefa#0" />
           </folding>
         </state>
       </provider>

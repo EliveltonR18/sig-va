@@ -57,8 +57,7 @@ public class Tarefa {
         Period period = Period.between(this.getDataInicio(), this.getDataTermino()); 
         return period.getDays(); 
     } 
- 
-    @Override 
+    
     public String toString() { 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy"); 
         return "C�digo da tarefa: " + this.getCodigoTarefa() +  "\n" + 
