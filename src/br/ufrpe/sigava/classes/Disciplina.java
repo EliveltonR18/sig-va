@@ -25,6 +25,10 @@ public class Disciplina{
 		this.setCargaHoraria(cargaHoraria);
 	}
 
+	public Disciplina(){
+
+    }
+
     public int getDuracaoAula() {
         return duracaoAula;
     }
