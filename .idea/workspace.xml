@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415787fc-470c-4714-919a-b52bf7eb3c9a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Disciplina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Disciplina.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,7 +17,7 @@
       <file leaf-file-name="Pessoa.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Pessoa.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
+            <state relative-caret-position="375">
               <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -31,27 +30,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Disciplina.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Disciplina.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Disciplina.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+            <state relative-caret-position="123">
+              <caret line="135" column="8" selection-start-line="135" selection-start-column="8" selection-end-line="135" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Disciplina#0;class#Disciplina#0" />
                 <element signature="method#adicionarAluno#0;class#Disciplina#0" />
                 <element signature="method#adicionarProfessor#0;class#Disciplina#0" />
+                <element signature="method#adicionarTarefa#0;class#Disciplina#0" />
+                <element signature="method#getDataFim#1;class#Disciplina#0" />
+                <element signature="method#toString#0;class#Disciplina#0" />
                 <element signature="method#equals#0;class#Disciplina#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tarefa.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Tarefa.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Tarefa.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="40" column="6" lean-forward="true" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+            <state relative-caret-position="180">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="method#Tarefa#0;class#Tarefa#0" />
+                <element signature="method#Tarefa#1;class#Tarefa#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,8 +78,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Pessoa.java" />
-        <option value="$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Disciplina.java" />
         <option value="$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Tarefa.java" />
+        <option value="$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Disciplina.java" />
       </list>
     </option>
   </component>
@@ -97,6 +103,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -119,9 +128,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -200,14 +206,16 @@
       <workItem from="1527040031841" duration="673000" />
       <workItem from="1527041651783" duration="29000" />
       <workItem from="1527042297122" duration="1591000" />
+      <workItem from="1527044161186" duration="2563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4148000" />
+    <option name="totallyTimeSpent" value="6711000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1368" height="780" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -222,9 +230,8 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26136363" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2659091" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32917318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -236,6 +243,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32917318" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,10 +254,52 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Pessoa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Pessoa#0;class#Pessoa#0" />
+            <element signature="method#getNome#0;class#Pessoa#0" />
+            <element signature="method#toString#0;class#Pessoa#0" />
+            <element signature="method#equals#0;class#Pessoa#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Disciplina.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Disciplina#0;class#Disciplina#0" />
+            <element signature="method#adicionarAluno#0;class#Disciplina#0" />
+            <element signature="method#adicionarProfessor#0;class#Disciplina#0" />
+            <element signature="method#adicionarTarefa#0;class#Disciplina#0" />
+            <element signature="method#getDataFim#1;class#Disciplina#0" />
+            <element signature="method#toString#0;class#Disciplina#0" />
+            <element signature="method#equals#0;class#Disciplina#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Tarefa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="40" column="6" lean-forward="true" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+          <folding>
+            <element signature="method#Tarefa#0;class#Tarefa#0" />
+            <element signature="method#Tarefa#1;class#Tarefa#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Pessoa.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -294,7 +344,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Pessoa.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
+        <state relative-caret-position="375">
           <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -306,24 +356,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Tarefa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="method#Tarefa#0;class#Tarefa#0" />
+            <element signature="method#Tarefa#1;class#Tarefa#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Disciplina.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        <state relative-caret-position="123">
+          <caret line="135" column="8" selection-start-line="135" selection-start-column="8" selection-end-line="135" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Disciplina#0;class#Disciplina#0" />
             <element signature="method#adicionarAluno#0;class#Disciplina#0" />
             <element signature="method#adicionarProfessor#0;class#Disciplina#0" />
+            <element signature="method#adicionarTarefa#0;class#Disciplina#0" />
+            <element signature="method#getDataFim#1;class#Disciplina#0" />
+            <element signature="method#toString#0;class#Disciplina#0" />
             <element signature="method#equals#0;class#Disciplina#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufrpe/sigava/classes/Tarefa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="40" column="6" lean-forward="true" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
         </state>
       </provider>
     </entry>

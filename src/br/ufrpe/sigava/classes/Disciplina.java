@@ -13,17 +13,27 @@ public class Disciplina{
 	private LocalDate dataInicio;
 	private LocalDate dataFim;
 	private DayOfWeek diaAula;
+	private int duracaoAula;
 	private int cargaHoraria;
+	private ArrayList tarefas = new ArrayList();
 
-	public Disciplina(String nome, LocalDate dataInicio, DayOfWeek diaAula, int cargaHoraria) {
+	public Disciplina(String nome, LocalDate dataInicio, DayOfWeek diaAula, int duracaoAula,int cargaHoraria) {
 		this.setNome(nome);
 		this.setDataInicio(dataInicio);
-		this.setDataFim(dataFim);
 		this.setDiaAula(diaAula);
+		this.setDuracaoAula(duracaoAula);
 		this.setCargaHoraria(cargaHoraria);
 	}
 
-	public String getNome() {
+    public int getDuracaoAula() {
+        return duracaoAula;
+    }
+
+    public void setDuracaoAula(int duracaoAula) {
+        this.duracaoAula = duracaoAula;
+    }
+
+    public String getNome() {
 		return nome;
 	}
 
@@ -39,16 +49,12 @@ public class Disciplina{
 		return dataInicio;
 	}
 
-	public LocalDate getDataFim() {
-		return dataFim;
-	}
-
 	public DayOfWeek getDiaAula() {
 		return diaAula;
 	}
 
 	public int getCargaHoraria() {
-		return cargaHoraria;
+		return this.cargaHoraria;
 	}
 
 	public void setNome(String nome) {
@@ -96,6 +102,61 @@ public class Disciplina{
 		}
 		return retorno;
 	}
+
+    public boolean adicionarTarefa(Tarefa tarefa) {
+        boolean retorno = false;
+        if (tarefa != null) {
+            this.tarefas.add(tarefa);
+            retorno = true;
+        }
+        return retorno;
+    }
+
+    public LocalDate getDataFim(){
+	    LocalDate dataFim = null;
+	    LocalDate dataInicio = this.getDataInicio();
+	    DayOfWeek diaAula = this.getDiaAula();
+	    int cargaHoraria = this.getCargaHoraria();
+	    for (int i = cargaHoraria; i > 0;){
+	        if (dataInicio.getDayOfWeek().equals(diaAula)){
+	            i -= this.getDuracaoAula();
+	            dataInicio.plusDays(1);
+            }
+            else{
+	            dataInicio.plusDays(1);
+            }
+        }
+        dataFim = dataInicio;
+	    return dataFim;
+    }
+
+    public int getCargaHorariaRestante(){
+	    int cargaHorariaRestante = 0;
+	    LocalDate dataInicio = this.getDataInicio();
+	    LocalDate hoje = LocalDate.now();
+	    DayOfWeek diaAula = this.getDiaAula();
+	    int cargaHoraria = this.getCargaHoraria();
+
+        if (dataInicio.isBefore(hoje)){
+            for (int i = cargaHoraria; dataInicio.isBefore(hoje);){
+                if (dataInicio.getDayOfWeek().equals(diaAula)){
+                    i -= this.getDuracaoAula();
+                    dataInicio.plusDays(1);
+                    cargaHorariaRestante = i;
+                }
+                else{
+                    dataInicio.plusDays(1);
+                }
+            }
+
+            if (hoje.getDayOfWeek().equals(diaAula)){
+                cargaHorariaRestante -= this.getDuracaoAula();
+            }
+        }
+        else cargaHorariaRestante = cargaHoraria;
+
+	    return cargaHorariaRestante;
+    }
 
 	public String toString() {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
