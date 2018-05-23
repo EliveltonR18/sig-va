@@ -1,10 +1,11 @@
-package br_ufrpe_sigava;
+package br.ufrpe.sigava.classes;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
-public class Disciplina {
+public class Disciplina{
 
 	private String nome;
 	private Pessoa professor;
@@ -14,7 +15,7 @@ public class Disciplina {
 	private DayOfWeek diaAula;
 	private int cargaHoraria;
 
-	public Disciplina(String nome, LocalDate dataInicio, LocalDate dataFim, DayOfWeek diaAula, int cargaHoraria) {
+	public Disciplina(String nome, LocalDate dataInicio, DayOfWeek diaAula, int cargaHoraria) {
 		this.setNome(nome);
 		this.setDataInicio(dataInicio);
 		this.setDataFim(dataFim);
@@ -96,11 +97,12 @@ public class Disciplina {
 		return retorno;
 	}
 
-	@Override
 	public String toString() {
-		return "Nome da Disciplina: " + nome + "" + "\nProfessor:" + professor + "Início da disciplina: " + dataInicio
-				+ "\nData termino da disciplina: " + dataFim + "\nDia que ocorre a aula:" + diaAula
-				+ "\nCarga Horária: " + cargaHoraria + "\nAlunos: " + alunos;
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		return "Nome da Disciplina: " + this.getNome() + "" + "\nProfessor:" + this.getProfessor().toString()
+				+ "Início da disciplina: " + this.getDataFim().format(formatter) + "\nData termino da disciplina: "
+				+ this.getDataFim().format(formatter) + "\nDia que ocorre a aula:" + this.getDiaAula().toString()
+				+ "\nCarga Horária: " + this.getCargaHoraria();
 	}
 
 	public boolean equals(Disciplina obj) {
